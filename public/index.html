@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Documentation Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet"
+          href="styles.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex h-full min-h-screen   ">
+        <!-- Sidebar -->
+        <div id="sidebar"
+             class="w-64 bg-gray-800 text-white p-4">
+            <h2 class="text-xl font-bold mb-4">Documentator</h2>
+            <ul id="file-list"
+                class="space-y-2">
+                <!-- File list will be populated here -->
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="flex-1 p-8">
+            <h1 id="doc-title"
+                class="text-3xl font-bold mb-4">Select a document</h1>
+            <div id="markdown-content"
+                 class="bg-white p-6 rounded shadow"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
